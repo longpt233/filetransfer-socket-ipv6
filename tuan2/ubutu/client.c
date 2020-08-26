@@ -29,7 +29,7 @@ int main(){
     serveraddr.sin6_family = AF_INET6;     //6
     serveraddr.sin6_port = htons(SERVERPORT);  //6
     //serveraddr.sin6_addr=in6addr_loopback;
-    if (inet_pton(AF_INET6, "2402:800:61c7:5445:68c4:725a:6fd4:83a6", &serveraddr.sin6_addr) < 0){  //6
+    if (inet_pton(AF_INET6, "2405:4800:170e:f638:b4a3:23f0:ad18:d0e", &serveraddr.sin6_addr) < 0){  //6
         perror("IPaddress Convert Error");
         exit(1);
     }
@@ -92,6 +92,3 @@ void sendtext(int sockfd){
     }
 }
 
-void chat(int sockfd){
-    
-}

@@ -1,4 +1,4 @@
-//NOTE : compile with -lws2_32   option 
+
 // client on windows
 
 #include <stdio.h>

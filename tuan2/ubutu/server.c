@@ -1,6 +1,5 @@
 // server on ubutu 
-// Bind failed: Address already in use  => change port 
-// other error : check th ip addr
+
 
 
 #include <stdio.h>
