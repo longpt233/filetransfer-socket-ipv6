@@ -2,6 +2,7 @@
 - [x] transfer simple pdf  from ubutu to ubutu 
 - [x] zip (up to 400mb) windows to ubutu 
 - [x] send text to server
+- [ ] reconect ? remember check point FTP 
 
 ## Hello to markdown
 - Ctrl + shift + v: view 
