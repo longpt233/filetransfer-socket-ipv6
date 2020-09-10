@@ -34,7 +34,6 @@ int main()
     servaddr.sin_family = AF_INET;
     servaddr.sin_addr.s_addr = htonl(INADDR_ANY);
     servaddr.sin_port = htons(5556);
-
     if (bind(sockfd, (struct sockaddr*) &servaddr, sizeof(servaddr)) != 0) {
         exit(1);
     }

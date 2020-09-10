@@ -7,6 +7,7 @@
 ## Hello to markdown
 - Ctrl + shift + v: view 
 - Ctrl + shift + i: format table 
+-  bold * * 
 
 ## Content 
 
@@ -57,13 +58,31 @@
 + in this step, client and server can read/ write over int sockfd
 
 8. read/write 
-+ use only sockfd 
++ read/write (int fs, const void *buf, ssize_t N) *use only sockfd *
++ send/recv : is addition of read/write, with flag 
++ fread/fwrite : (const void * ptr, size_t size, size_t count, FILE * stream )
++ pread/pwrite : (int fd, void *buf, size_t count, off_t offset)
++ sendto/recvfrom: datagram (connectioless)
 
-9. close 
+1. close 
 
 ## note 
 - run : make
 - on windows: compiler with   -lws2_32  flag 
 - MSG_WAITALL : only on server 
+- r+ : r+w,create if not exist
+- fopen (return FILE*) call sys-call: open (return fd)
+    + fileno(FILE* ) return integer descriptor 
+- stat : return struct fd (int ) of file  
+- fseek() , ftell()
+- du -h file  && md5sum file.
+
+
+## Error
+- A socket call may fail for any of several reasons, including:
+    + lack of memory (ENOBUFS)
+    + request for an unknown protocol (EPROTONOSUPPORT)
+    + request for a type of socket for which there's no supporting protocol (EPROTOTYPE) 
 - Bind failed: Address already in use  => change port 
 - other error : check th ip addr
+- printf not immediately : \n 
